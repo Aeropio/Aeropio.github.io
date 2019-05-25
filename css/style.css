@@ -1,0 +1,166 @@
+/*base*/
+body{
+  background-color: #FAFAFA;
+  color: black;
+}
+:root{
+    --modular-scale: 1.2; 
+}
+/*layout*/
+#topnav{
+  position: sticky;
+  top: 0px;
+  background-color: #36415F;
+  height: 70px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#welcome-section{
+ color: white;
+}
+header {
+  background-color: #56A6B6;
+  margin: 1vw 3vw 1vw 3vw;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  overflow: auto;
+}
+#projects{
+  border-style: solid;
+  border-color: #E8B4AE;
+  border-width: 3px;
+  margin: 1vw 5vw 1vw 5vw;
+  text-align: center;
+}
+/*modules*/
+#topnav img{
+  height: 65px;
+  z-index: 2;
+  margin-left: 1vw;
+}
+.buttons{
+  float: right; 
+  clear: both;
+  margin: 0 15px 0 0;
+}
+button{ 
+  font-size: 16px;
+  background-color: #F3B3A6;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+#topnav button {
+  height: 65px;
+  width: 100px;
+}
+header > .buttons {
+  margin-bottom: 1vw;
+}
+.dropbtn{
+  height: 65px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.projectMain{
+  margin: 1% 1% 1% 1%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  overflow: auto;
+}
+.projectMain > img {
+  height: 30vh;
+  display: block;
+  margin: auto;
+}
+.projectDetails{
+  background-color: #87BEB2;
+  margin: 1% 1% 1% 1%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  text-align: center;
+  overflow: auto;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    text-align: center;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+ul {
+  margin: 3vw 2vw 2vw 1vw;
+}
+/*typography*/
+li{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: italic;
+  text-align: left;
+  font-size: calc(var(--modular-scale, 16px) * 1.44em);
+}
+h1{
+  font-size: calc(var(--modular-scale, 16px) * 2.986em);
+  font-family: 'Roboto Condensed', bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'Roboto Condensed';
+  font-size: calc(var(--modular-scale, 16px) * 2.074em);
+}
+h3 {
+ font-family: 'Roboto Condensed';
+ font-size: calc(var(--modular-scale, 16px) * 1.728em); 
+}
+p {
+  font-family: 'Roboto Condensed', bold;
+  font-size: calc(var(--modular-scale, 16px) * 1em);
+  lign-height: 1.6;
+}
+
+/*state*/
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+.anchor{
+  display: block;
+  height: 85px; /*same height as header*/
+  margin-top: -85px; /*same height as header*/
+  visibility: hidden;
+}
+
+.show {display:block;}
+* {box-sizing:border-box}
+
+.dropbtn:hover, .dropbtn:focus, button:hover, button:focus {
+    background-color: #F29785;
+}
+.dropdown-content a:hover {background-color: #ddd}
+
+/*media queries*/
+@media(max-width: 600px) {
+      :root{
+        --modular-scale:0.83;
+    }
+}

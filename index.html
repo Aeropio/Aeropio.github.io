@@ -1,84 +1,98 @@
-<body>
-  <div class="container-fluid">
-  <div id="topnav">
-  <a class="active" href="#"> 
-    <img src = "http://www.hsdtaxlaw.com/wp-content/uploads/2016/05/20140806_LogoSupporterPlaceholder.png"> </a>
-    <div id="welcome-section">
-      <h1> Hi there! My name is [name] </h1>
-    </div>
-  <span class="buttons" id="navbar"> 
-    <button>
-  <a id="aboutMeLink" href="#aboutMeAnchor">About me</a>
-    </button>
-  <span class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Projects</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#project1">Project 1</a>
-    <a href="#project2">Project 2</a>
-    <a href="#project3">Project 3</a>
-  </div>
-</span>   
-</span>
-</div>
- <header>
-     <span class="anchor" id="aboutMeAnchor"></span>
-    <h2>Professional Summary and Job Experience</h2>  
-     <ul>
-       <li>First acheivement text text text text</li>
-       <li>Second acheivement text text text text</li>
-       <li>Third acheivement text text text text</li>
-     </ul> 
-     <span class="buttons">
-     <button><a href="https://www.facebook.com/" target="_blank">Follow me on Facebook!</a> </button>
-     <button><a href="https://www.linkedin.com/feed/" target="_blank">Connect with me on LinkedIn!</a></button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+      <div class="container-fluid">
+      <div id="topnav">
+          <div id="welcome-section">
+            <h1> Azra Masood </h1>
+          </div>
+      <span class="buttons" id="navbar"> 
+        <button>
+      <a id="aboutMeLink" href="#aboutMeAnchor">About me</a>
+        </button>
+      <span class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Projects</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#project1">Project 1</a>
+        <a href="#project2">Project 2</a>
+        <a href="#project3">Project 3</a>
+      </div>
+    </span>   
     </span>
- </header>
-<section id="projects">
-    <div class="row justify-content-md-center" >
-      <!--company and logo -->
-      <div class = "col-md-4 projectMain">
-        <span class="anchor" id="project1"></span>
-    <div class="project-title">    
-    <h3>Project 1 for [Company Name]</h3>
     </div>
-        <img src="https://images.freeimages.com/images/premium/thumbs/3691/36917378-male-partners.jpg"/>
-      </div>
-      <div class = "col-md-6 projectDetails">
-        <h3>Job responsibilities</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum sempe <a href="https://learn.freecodecamp.org/">link to project</a>
-      </p>
-      </div>  
+     <header>
+         <span class="anchor" id="aboutMeAnchor"></span>
+        <h2>Professional Summary and Job Experience</h2>  
+         <ul>
+           <li>Software Engineer with experience in Ruby on Rails, Java, SQL, Postgres.</li>
+           <li>Expertise in developing Rest API's, integration of third parties like mailjet, solr, MSG91.</li>
+           <li>Experience of working at a startup and implementing various features of the product from scratch. Currently, contributing to Wikipedia open source project.</li>
+         </ul> 
+         <span class="buttons">
+         <button><a href="https://github.com/Aeropio" target="_blank">Github</a> </button>
+         <button><a href="https://www.linkedin.com/in/azra-masood-893133a7/" target="_blank">LinkedIn!</a></button>
+        </span>
+     </header>
+    <section id="projects">
+        <div class="row justify-content-md-center" >
+          <!--company and logo -->
+          <div class = "col-md-4 projectMain">
+            <span class="anchor" id="project1"></span>
+        <div class="project-title">    
+        <h3>E-way Bill </h3>
+        </div>
+            <img src="http://studycafe.in/wp-content/uploads/2017/04/E-Way-Bills-as-Per-New-GST-Rules.png"/>
+          </div>
+          <div class = "col-md-6 projectDetails">
+            <h3>Job responsibilities</h3>
+            <p>API based interface for the generation of e-way bill by taxpayers and transporters. <br>Enabled 2-factor authentication during sign-up by OTP generation and verification of OTP using third party
+                integration(MSG91).
+                Implemented notification alert system using scheduler which triggers SMS and email alerts to users.
+                Implemented search functionality using solr to search EWB using EWB number and invoice number.
+            </p>
+          </div>  
+        </div>
+        <div class="row justify-content-md-center">
+          <!--company and logo -->
+          <div class = "col-md-4 projectMain">
+            <span class="anchor" id="project2"></span>
+            <h3 class="project-title">Return Filing</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvj6gIZWlTDTROpHrmd2ZKCHJ3pH0L5p45LhJjqk9LQru-Lw1g"/>
+          </div>
+          <div class = "col-md-6 projectDetails">
+            <h3>Job responsibilities</h3>
+            <p>ASP and GSP solution that enables businesses and organisations to save transactions to GSTN and file
+              their IT returns. <br> Integrated mailjet to send mails to newly created users.
+              Developed APIs for GSP(GST Suvidha provider) and ASP(Application Service provider) for interacting with the GSTN system.
+          </p>
+          </div>  
+        </div>
+       <div class="row justify-content-md-center">
+          <!--company and logo -->
+          <div class = "col-md-4 projectMain">
+            <span class="anchor" id="project3"></span>
+            <h3 class="project-title">Yelp Camp (Personal project - Inprogress)</h3>
+            <img src="https://images.unsplash.com/photo-1414016642750-7fdd78dc33d9?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925"/>
+          </div>
+          <div class = "col-md-6 projectDetails">
+            <h3>Job responsibilities</h3>
+            <p>Yelp Camp - an application that allows to view campgrounds with a short description. Once logged in we can create our own campgrounds that includes a title, image address and short description. This project is in Node, Express, Mongo, HTML, CSS.
+          </p>
+          </div>  
+        </div> 
+    </section>
     </div>
-    <div class="row justify-content-md-center">
-      <!--company and logo -->
-      <div class = "col-md-4 projectMain">
-        <span class="anchor" id="project2"></span>
-        <h3 class="project-title">Project 2 for [Company Name]</h3>
-        <img src="https://images.freeimages.com/images/premium/thumbs/3691/36917378-male-partners.jpg"/>
-      </div>
-      <div class = "col-md-6 projectDetails">
-        <h3>Job responsibilities</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum sempe
-      </p>
-      </div>  
-    </div>
-   <div class="row justify-content-md-center">
-      <!--company and logo -->
-      <div class = "col-md-4 projectMain">
-        <span class="anchor" id="project3"></span>
-        <h3 class="project-title">Project 3 for [Company Name]</h3>
-        <img src="https://images.freeimages.com/images/premium/thumbs/3691/36917378-male-partners.jpg"/>
-      </div>
-      <div class = "col-md-6 projectDetails">
-        <h3>Job responsibilities</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum sempe
-      </p>
-      </div>  
-    </div> 
-</section>
-</div>
-</body>
-<footer>
-  <p class="text-info text-center">Written and coded by <a id="profile-link" href="https://www.freecodecamp.org/valeriyas28" target="_blank"> Valeriia Protsko </a>
+    <script  src="js/index.js"></script>
+  </body>
+
+  <footer>
+  <p class="text-info text-center">by <a id="profile-link" href="https://www.hackerrank.com/azramasood369" target="_blank"> Azra Masood </a>
     </p>
 </footer>
+
+</html>
