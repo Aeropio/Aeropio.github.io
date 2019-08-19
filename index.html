@@ -86,6 +86,24 @@
     </section>
     </div>
     <script  src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      
+$(document).ready(function(){
+$.ajax({
+   type: "POST",
+  url: "https://grover-us-api-analytics.dev.glooko.com/api/v1/at_risk/get_statistics",
+  success: function(resultData){
+          alert("Save Complete");
+  },
+  error:function(jqXHR, exception){
+    debugger;
+
+  }
+})
+})
+
+    </script>
   </body>
 
   <footer>
