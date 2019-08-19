@@ -93,12 +93,12 @@ $(document).ready(function(){
 $.ajax({
    type: "POST",
     url: "https://cors-anywhere.herokuapp.com/https://grover-us-api-analytics.dev.glooko.com/api/v1/at_risk/get_statistics",
-   // headers: {
-   //   'Access-Control-Allow-Origin': '*',
-   //   'Access-Control-Allow-Methods': 'GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH',
-   //   'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization, X-Request-With',
-   //   'Access-Control-Allow-Credentials': 'true',
-   // },
+   headers: {
+     'Access-Control-Allow-Origin': '*',
+     'Access-Control-Allow-Methods': 'GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH',
+     'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization, X-Request-With',
+     'Access-Control-Allow-Credentials': 'true',
+   },
   success: function(resultData){
           alert("Save Complete");
   },
