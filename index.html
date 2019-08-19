@@ -88,18 +88,58 @@
     <script  src="js/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-      
+  
+  //"https://cors-anywhere.herokuapp.com/https://grover-us-api-analytics.dev.glooko.com/api/v1/at_risk/get_statistics"
 $(document).ready(function(){
+  // Cookies.set('ajs_anonymous_id', '%227c60150f-9cd0-4cb1-ba72-0ea81a6a4cc6%22');
+  // Cookies.set('ajs_group_id', null);
+  // Cookies.set('ajs_user_id', '%22pink-eastlawn-4229%22');
+
+  // Cookies.set('mp_a90f5f32fe902921e945ca00555f635d_mixpanel', '%7B%22distinct_id%22%3A%20%22pink-eastlawn-4229%22%2C%22%24device_id%22%3A%20%2216cae17793a9a-01e7c82881ded7-12396e57-1aeaa0-16cae17793b306%22%2C%22mp_lib%22%3A%20%22Segment%3A%20web%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fgrover-us-my.dev.glooko.com%2Fpatients%22%2C%22%24initial_referring_domain%22%3A%20%22grover-us-my.dev.glooko.com%22%2C%22%24user_id%22%3A%20%22pink-eastlawn-4229%22%2C%22mp_name_tag%22%3A%20%22pink-eastlawn-4229%22%2C%22id%22%3A%20%22pink-eastlawn-4229%22%7D');
+
+  // Cookies.set('_logbook-web_session', 'cG1aRHFiS2pvR0dEdm43OU5uTU94UVJuT2h1WWZoL1czS21ZcFVlcDE5K1pVRTdCaHJQZ3h2RVJqV20vL0dEODZaZFFXMW9NWEM3eU1QMm4rKzVESWpoVCtPWU1RdEFSbkpQa0g1UFBGejB6ZENUL2pPZjJVVTZTS2E5azFDMHQwWC9CRUdPWFlaVDRXUWRJei9UWGFsalY5NzVxcDBjb0pxZkhuTzNkSWlwVERaTlRhWTR6aGRVU2w1YklXeFNQOXNLNXQ4amgrZ1pLajZiRE1lUGpGSi9QK1lwY2VZb0ZDS01oWjJqYWVpYXh4SUlkeDhkczJUY2IvZSsrbmtFWGhJbk5ZWlhTdzFjLzFPQ1ZSRExDVTl4MldycGcwRm1na3U1Z3BkNDBROEIvbHVZVTVKNmZRZ0JaMHhWWThjS0NtSjJPNk1YTmt4cy82TVYzU1ZkM2lldXk3cDdLbXBZQmFzOTY3a0ZhWUFXYTBnUURZQXhuUndOYkp0SXpIS3A1Ry8zS0ErYkJhdWlMbUtQWjdDRkJEMkVQVENLaG8vK2NSZC82KzBOVDlrOTNqZUtyZlNncDlWYlZPTlZ5THJQdFFCMzZFdGtub1p0MDU1SkFDVDNMUkZIWjFkOE5FMnlmRXpNNEw4bUxBVzA9LS1JTlhYTU9UdjFBSzNWdGgrbzBuVitRPT0%3D--3362e7b2f399402c184e94ea948fe3ae8b02d589');
+  // Cookies.set('mp_a90f5f32fe902921e945ca00555f635d_mixpanel', '%7B%22distinct_id%22%3A%20%22pink-eastlawn-4229%22%2C%22%24device_id%22%3A%20%2216cae17793a9a-01e7c82881ded7-12396e57-1aeaa0-16cae17793b306%22%2C%22mp_lib%22%3A%20%22Segment%3A%20web%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fgrover-us-my.dev.glooko.com%2Fpatients%22%2C%22%24initial_referring_domain%22%3A%20%22grover-us-my.dev.glooko.com%22%2C%22%24user_id%22%3A%20%22pink-eastlawn-4229%22%2C%22mp_name_tag%22%3A%20%22pink-eastlawn-4229%22%2C%22id%22%3A%20%22pink-eastlawn-4229%22%7D');
+  // // Cookies.set()
+  // // Cookies.set()
+  // // Cookies.set()
+  // // Cookies.set()
+
+
+// url: "https://grover-us-api-analytics.dev.glooko.com/api/v1/pre_post/get_smbg_statistics",
+
+// $.ajax({
+//    type: "POST",
+//     url : "https://grover-us-api-analytics.dev.glooko.com/api/v1/pre_post/get_smbg_statistics",
+
+//    //  headers: {
+//    //    'Access-Control-Allow-Methods': 'POST,GET'
+//    // //   'Access-Control-Allow-Origin': 'https://aeropio.github.io/'
+//    //    //'Content-Type' : 'application/json'
+//    // //   'Access-Control-Request-Method': 'POST,GET',
+//    // //   'Access-Control-Request-Headers': 'origin, x-requested-with'
+//    // //   'Access-Control-Allow-Headers': 'Access-Control-Allow-Origin'
+
+
+//    // },
+//   success: function(resultData){
+//           console.log(resultData);
+//           alert("Save Complete");
+//   },
+//   error:function(jqXHR, exception){
+//     debugger;
+
+//   }
+// })
+// })
+
 $.ajax({
    type: "POST",
-    url: "https://cors-anywhere.herokuapp.com/https://grover-us-api-analytics.dev.glooko.com/api/v1/at_risk/get_statistics",
-   headers: {
-     'Access-Control-Allow-Origin': '*',
-     'Access-Control-Allow-Methods': 'GET,OPTIONS,HEAD,PUT,POST,DELETE,PATCH',
-     'Access-Control-Allow-Headers': 'Origin, Content-Type, Accept, Authorization, X-Request-With',
-     'Access-Control-Allow-Credentials': 'true',
-   },
-  success: function(resultData){
+   url : "http://localhost:3012/api/v1/pre_post/get_smbg_statistics",
+   // dataType: 'json',
+   // contentType: 'application/json',
+   data: JSON.stringify({test: true}),
+     success: function(resultData){
+          console.log(resultData);
           alert("Save Complete");
   },
   error:function(jqXHR, exception){
