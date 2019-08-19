@@ -93,6 +93,7 @@ $(document).ready(function(){
 $.ajax({
    type: "POST",
   url: "https://grover-us-api-analytics.dev.glooko.com/api/v1/at_risk/get_statistics",
+   headers: {"Access-Control-Allow-Origin": "*"},
   success: function(resultData){
           alert("Save Complete");
   },
